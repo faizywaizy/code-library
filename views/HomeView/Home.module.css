@@ -1,0 +1,39 @@
+.about-me-container {
+  @apply container;
+}
+
+.skills-bg {
+  @apply bg-gray-100;
+}
+
+.skills-container {
+  @apply container pt-20 pb-32;
+}
+
+.skills-header,
+.education-experience-header {
+  @apply text-[32px] text-center font-bold text-[#252934];
+}
+
+.carousel-skill {
+  @apply mt-5;
+}
+
+.education-experience {
+  @apply py-20 relative;
+}
+
+.education-experience-container {
+  @apply container z-40 relative;
+}
+
+.education-experience-particles {
+  @apply absolute top-0 left-0 right-0 bottom-0 h-full w-full z-30;
+}
+
+@screen md {
+  .skills-header,
+  .education-experience-header {
+    @apply text-4xl;
+  }
+}
