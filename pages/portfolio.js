@@ -38,7 +38,7 @@ export async function getServerSideProps(context) {
   return {
     props: {
       name: 'Faizan Ahmed-Chan',
-      job: 'Product Manager with Full Stack Dev Experience.',
+      job: 'Product Manager',
       avatar: '/assets/profile/cv5_compress.jpg',
       email: { url: 'mailto:faizan@ahmedchan.com', text: 'faizan@ahmedchan.com' },
       address: { url: 'https://goo.gl/maps/7zbfzVNnhQVk3jPz7', text: 'Toronto, Canada' },
@@ -52,22 +52,6 @@ export async function getServerSideProps(context) {
         {
           url: 'https://www.linkedin.com/in/aryairamawahono',
           icon_class_name: 'fab fa-linkedin',
-        },
-        {
-          url: 'https://wa.link/e85y2f',
-          icon_class_name: 'fab fa-whatsapp',
-        },
-        {
-          url: 'https://t.me/aryairamawahono',
-          icon_class_name: 'fab fa-telegram-plane',
-        },
-        {
-          url: 'https://discord.com/users/463194642469486614',
-          icon_class_name: 'fab fa-discord',
-        },
-        {
-          url: 'https://www.twitch.tv/ax404',
-          icon_class_name: 'fab fa-twitch',
         },
       ],
       skills: [
