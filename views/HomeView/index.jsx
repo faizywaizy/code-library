@@ -11,7 +11,6 @@ const HomeView = ({
   name,
   job,
   avatar,
-  phoneNumber,
   email,
   address,
   contacts,
@@ -25,7 +24,6 @@ const HomeView = ({
       name={name}
       job={job}
       avatar={avatar}
-      phoneNumber={phoneNumber}
       email={email}
       address={address}
       contacts={contacts}
@@ -38,7 +36,7 @@ const HomeView = ({
           <p className={style['skills-header']}>Skills</p>
           <Carousel className={style['carousel-skill']} config={configSkillsCarousel}>
             {skills?.map((skill, index) => (
-              <CardSkill iconClassName={skill.icon_class_name} title={skill.title} key={index} />
+              <CardSkill iconClassName={skill.icon_class_name} title={skill.title} years={skill.years} key={index} />
             ))}
           </Carousel>
         </div>
@@ -86,10 +84,6 @@ HomeView.propTypes = {
   name: PropTypes.string.isRequired,
   job: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  phoneNumber: PropTypes.shape({
-    url: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
-  }).isRequired,
   email: PropTypes.shape({
     url: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,

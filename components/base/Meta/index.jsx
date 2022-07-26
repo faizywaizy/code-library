@@ -9,10 +9,10 @@ const Meta = () => {
       />
       <meta
         name="description"
-        content="Arya Irama Wahono is a full stack web developer who always likes to experiment and never gives up."
+        content="The Ahmed-Chan Product explores the everyday world with a product lens."
       />
       <meta name="robots" content="index, follow" />
-      <title>Arya Irama Wahono</title>
+      <title>AC Product </title>
     </Head>
   );
 };

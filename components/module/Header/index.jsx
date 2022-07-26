@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { headerParticles } from '../../../configs/tsParticles';
 import { TextIconContact, ListIconContactContainer, ListIconContact } from '../../base';
 
-const Header = ({ name, job, avatar, phoneNumber, email, address, contacts }) => {
+const Header = ({ name, job, avatar, email, address, contacts }) => {
   return (
     <div className={style['header-container']}>
       <Particles options={headerParticles} id="headerParticles" className={style['header-particles']} />
@@ -33,9 +33,6 @@ const Header = ({ name, job, avatar, phoneNumber, email, address, contacts }) =>
             data-aos-anchor="#header"
             className={style['header-content-text-contact']}
           >
-            <TextIconContact icon="/assets/icons/whatsapp.svg" url={phoneNumber.url}>
-              {phoneNumber.text}
-            </TextIconContact>
             <TextIconContact icon="/assets/icons/email.svg" url={email.url}>
               {email.text}
             </TextIconContact>
@@ -68,10 +65,6 @@ Header.propTypes = {
   name: PropTypes.string.isRequired,
   job: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  phoneNumber: PropTypes.shape({
-    url: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
-  }).isRequired,
   email: PropTypes.shape({
     url: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
