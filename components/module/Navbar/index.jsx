@@ -48,13 +48,13 @@ const Navbar = ({ sectionHeader, ...props }) => {
             </div>
             <div className={style['li-menu']}>
               
-              <div onClick={() => Router.push('/jos')} className={style['li-menu-a']}>
+              {/* <div onClick={() => Router.push('/jos')} className={style['li-menu-a']}> */}
 
-              <Link to="about" spy={true} smooth={true} duration={500}>
+              <Link 
+                className={style['li-menu-a']} to="about" spy={true} smooth={true} duration={500}>
                 About
               </Link>
 
-              </div>
             </div>
             <div className={style['li-menu']}>
               <div onClick={() => Router.push('/jos')} className={style['li-menu-a']}>
